@@ -1,0 +1,4 @@
+db.sqlite3
+music_app/__pycache__/*
+/apps/categories/__pycache__/*
+/aps/categories/migrations/*
