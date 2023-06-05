@@ -1,0 +1,61 @@
+@startuml
+title Aplicativos de gerenciamento de músicas e artistas
+
+class App {
+    - nome: String
+    - versao: String
+    - artista: Artista
+    - musica: Musica
+    - album: Album
+    - usuario: Usuario
+    + list_artistas(artista)
+    + list_musicas(musica)
+    + list_albums(album)
+    + listar_musicas_de_um_artista(artista)
+    + listar_musica_de_um_album(album)
+}
+
+class Usuario {
+    - nome:  string
+    - senha: string
+    - pessoa: Pessoa
+    + cadastrar_usuario(nome, senha, pessoa)
+}
+
+class Musica{
+    - nome: string
+    - duracao: int
+    - genero: string
+    - artista: Artista
+    - album: Album
+    + cadastrar_musica(nome, duracao, genero, artista, album)
+}
+
+class Album{
+    - nome: string
+    + cadastrar_album(nome)
+}
+
+class Pessoa{
+- nome: string
+- cpf: int
+- data_de_nascimento: date
+- email: string
++ cadastrar_pessoa(nome, cpf, data_de_nascimento, email)
+}
+
+class Artista{
+- pessoa: Pessoa
+- funcao: string
++ cadastrar_artista(pessoa, funcao)
+}
+
+
+App *-- Musica
+App *-- Artista
+App *-- Usuario
+Pessoa <-- Usuario
+Pessoa <-- Artista
+Musica *-- Artista
+Album *-- Musica
+@enduml
