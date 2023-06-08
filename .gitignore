@@ -6,3 +6,5 @@ music_app/__pycache__/*
 /apps/products/migrations/*
 /apps/socialnetworks/__pycache__/*
 /apps/socialnetworks/migrations/*
+/apps/orders/__pycache__/*
+/apps/orders/migrations/*
