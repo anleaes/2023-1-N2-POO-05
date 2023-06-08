@@ -13,3 +13,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+    #categoria1 = Category("acao", "filmes de acao")
+
+    print

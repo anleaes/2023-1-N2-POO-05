@@ -2,3 +2,5 @@ db.sqlite3
 music_app/__pycache__/*
 /apps/categories/__pycache__/*
 /apps/categories/migrations/*
+/apps/products/__pycache__/*
+/apps/products/migrations/*
