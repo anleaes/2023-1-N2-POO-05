@@ -8,3 +8,5 @@ music_app/__pycache__/*
 /apps/socialnetworks/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
+/apps/clients/__pycache__/*
+/apps/clients/migrations/*
