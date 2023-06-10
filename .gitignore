@@ -1,4 +1,12 @@
 db.sqlite3
 music_app/__pycache__/*
-/apps/categories/__pycache__/*
-/aps/categories/migrations/*
+/apps/pessoas/__pycache__/*
+/apps/pessoas/migrations/*
+/apps/usuarios/__pycache__/*
+/apps/usuarios/migrations/*
+/apps/artistas/__pycache__/*
+/apps/artistas/migrations/*
+/apps/musicas/__pycache__/*
+/apps/musicas/migrations/*
+/apps/albums/__pycache__/*
+/apps/albums/migrations/*
