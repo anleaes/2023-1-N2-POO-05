@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'pessoas.apps.PessoasConfig',
     'albums.apps.AlbumsConfig',
+    'artistas.apps.ArtistasConfig',
 ]
 
 MIDDLEWARE = [
