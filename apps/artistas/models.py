@@ -4,8 +4,6 @@ from pessoas.models import Pessoa
 # Create your models here.
 
 class Artista(models.Model):
-    name = models.CharField('Nome', max_length=50)
-
     STATUS_CHOICES = (
         ('Vocalista', 'Vocalista'),
         ('Baterista', 'Baterista'),
