@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Pessoa(models.Model):
-    name = models.CharField('Nome', max_length=50)
+    nome = models.CharField('Nome', max_length=50)
     cpf = models.CharField('CPF', max_length=50)
     idade = models.CharField('Idade', max_length=2)
     email = models.CharField('Email', max_length=50)
