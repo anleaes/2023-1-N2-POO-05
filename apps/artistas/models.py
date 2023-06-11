@@ -1,4 +1,5 @@
 from django.db import models
+from pessoas.models import Pessoa
 
 # Create your models here.
 
@@ -12,8 +13,9 @@ class Artista(models.Model):
         ('Tecladista', 'Tecladista'),
         ('Violinista', 'Violinista'),
     )
-    status = models.CharField('Status', max_length=12, choices=STATUS_CHOICES, null=True, blank=True, default='Vocalista')
-    
+    funcao = models.CharField('Função', max_length=12, choices=STATUS_CHOICES, null=True, blank=True, default='Vocalista')
+    pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
+
     class Meta:
         verbose_name = 'Artista'
         verbose_name_plural = 'Artistas'
