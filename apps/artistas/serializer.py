@@ -1,9 +1,9 @@
-from .models import Artistas
+from .models import Artista
 from rest_framework import serializers
 
-class ArtistasSerializer(serializers.ModelSerializer):
+class ArtistaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Artistas
+        model = Artista
         fields = '__all__'
         
         # Para chamar todos os atributos:
