@@ -1,4 +1,4 @@
-from .models import Musica, Album
+from .models import Musica, Album, Artista
 from rest_framework import serializers
 
 class MusicaSerializer(serializers.ModelSerializer):
@@ -9,6 +9,11 @@ class MusicaSerializer(serializers.ModelSerializer):
 class AlbumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Album
+        fields = '__all__'
+
+class ArtistaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Artista
         fields = '__all__'
         
         # Para chamar todos os atributos:
