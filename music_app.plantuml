@@ -4,15 +4,9 @@ title Aplicativos de gerenciamento de músicas e artistas
 class Usuario {
     - nome:  string
     - senha: string
-    - pessoa: Pessoa
-    + cadastrar_usuario(nome, senha, pessoa)
+    + cadastrar_usuario(nome, senha,)
 }
 
-class Playlist{
-    - usuario: Usuario
-    - musica: Musica
-    - descricao: string
-}
 
 class Musica{
     - nome: string
@@ -25,27 +19,27 @@ class Musica{
 
 class Album{
     - nome: string
+    - ano_de_lancamento: int
+    - tempo_de_duracao:string
     + cadastrar_album(nome)
 }
 
-class Pessoa{
-- nome: string
-- cpf: int
-- data_de_nascimento: date
-- email: string
-+ cadastrar_pessoa(nome, cpf, data_de_nascimento, email)
+class Comentario{
+- musica: Musica
+- artista: Artista
+- comentario: String
++ mandar_comentario(musica, artista, comentario)
 }
 
 class Artista{
-- pessoa: Pessoa
-- funcao: string
-+ cadastrar_artista(pessoa, funcao)
+- nome: string
+- pais: string
+- segmento: string
++ cadastrar_artista(nome, pais, segmento)
 }
  
-Pessoa <-- Usuario
-Pessoa <-- Artista
 Musica *-- Artista
 Album --* Musica
-Musica --* Playlist
-Usuario --* Playlist
+Musica --* Comentario
+Usuario --* Comentario
 @enduml
