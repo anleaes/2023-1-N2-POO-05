@@ -10,3 +10,5 @@ music_app/__pycache__/*
 /apps/musicas/migrations/*
 /apps/albums/__pycache__/*
 /apps/albums/migrations/*
+/apps/comentarios/__pycache__/*
+/apps/comentarios/migrations/*
